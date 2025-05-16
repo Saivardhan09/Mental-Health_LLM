@@ -1,0 +1,137 @@
+body, .App {
+  font-family: 'Arial', sans-serif;
+  background-color: #a7a6f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  text-align: center;
+}
+
+.App {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px #1412abc4(221, 17, 214, 0.1);
+  flex-direction: column;
+  box-sizing: border-box;
+  transform: translateY(-50px); /* Move the whole container up */
+}
+
+h1 {
+  color: #121111;
+  margin-bottom: 20px; /* Adjust as needed to reduce space below the heading */
+  font-size: var(--font-size);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #121213;
+  font-size: var(--font-size);
+}
+
+select, textarea, button {
+  width: 80%; /* Increase width to 80% */
+  max-width: 1200px; /* Increase max-width as needed */
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 0px solid #080808;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: var(--font-size);
+}
+
+select {
+  background-color:#d2edf958;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+  background-color: #d5eefa47;
+}
+
+button {
+  background-color: #d2edf958;
+  color: #0a0a0a;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #a7d8ec58;
+}
+
+div.prediction {
+  margin-top: 20px;
+  background: #d5f1f94f;
+  padding: 45px;
+  border-radius: 10px;
+  text-align: left;
+  width: 80%; /* Increase width to 80% */
+  max-width: 1000px; /* Increase max-width as needed */
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  overflow-y: auto; /* Add overflow-y to make it scrollable if content overflows */
+}
+
+div.prediction h3 {
+  margin: 0 0 10px 0;
+}
+
+div.prediction p {
+  margin: 0;
+}
+
+/* Media queries to adjust font size based on screen size */
+@media (max-width: 1200px) {
+  div.prediction {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  div.prediction {
+    font-size: 14px; /* Further adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  div.prediction {
+    font-size: 12px; /* Further adjust font size for smallest screens */
+  }
+}
+
+/* Classes for different sizes */
+.small-text {
+  --font-size: 25px;
+}
+
+.large-text {
+  --font-size: 50px;
+}
+
+.small-input {
+  --input-width: 60%;
+  --input-max-width: 600px;
+}
+
+.large-input {
+  --input-width: 90%;
+  --input-max-width: 1200px;
+}
+
+.small-button {
+  --button-width: 60%;
+  --button-max-width: 700px;
+}
+
+.large-button {
+  --button-width: 90%;
+  --button-max-width: 800px;
+}
